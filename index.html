@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherApp</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid text-center">
+  <h1>Free Code Camp Weather App</h2>
+  <div class = "weather-app">
+    <div class="weatherapp">
+    <div class = "row" id="bar">
+      <div class = "col">
+        <div class="location"><span id="location">Unknown</span></div>
+        <div class="weather"><span id="weather">Unknown</span></div>
+      </div>
+      <div class = "col">
+        X
+      </div>
+    </div>
+    <div class="row d-flex align-items-center" id="main-box">
+      <div class="col" id="right">
+        <div class="icon">
+        </div>
+        <div class="temp"><span id="temp">0</span>
+        </div>
+        <div class="button">&#176C
+          <label class="switch">
+          <input type="checkbox" id="switch">
+          <span class="slider round"></span>
+          </label>
+          &#176F
+          </div>
+      </div>
+      <div class="col" id="details">
+        <!-- detailed weather info -->
+        <span id="humidity">Humidity: 0%</span><br>
+        <span id="pressure">Pressure: 0hPa</span><br>
+        <span id="wind">Wind: 0km/h N</span><br>
+        <span id="sunrise">Sunrise: -:-</span><br>
+        <span id="sunset">Sunset: -:-</span><br>
+      </div>
+    </div>
+    <div class="time">
+       <body onload="startTime()">
+
+<div id="clock"></div>
+       <div class="date"><span id="date">00/00/0000</span>
+       </div>
+     </div>
+    </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
